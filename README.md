@@ -1,17 +1,9 @@
-# pajic's Fabric mod template
+# Configurable Mining Delay
 
-Preconfigured with:
-- [Parchment](https://parchmentmc.org/) mappings
-- [Stonecutter](https://stonecutter.kikugie.dev/) for multiversioning
-- [Fzzy Config](https://fzzyhmstrs.github.io/fconfig/) for mod configuration
-- [Mod Publish Plugin](https://github.com/modmuss50/mod-publish-plugin) for publishing to Modrinth and CurseForge
+This is a fully client-side mod that allows you to change the delay between mining blocks.
 
-Idea run configurations:
-- Run client: Runs the client of the currently active MC version
-- Run server: Runs the server of the currently active MC version
-- Build: Builds the mod for all MC versions
-- Publish: Publishes the mod for all MC versions to Modrinth and CurseForge
+The mining delay can be changed from the default 5 ticks to 0-20, using the command `/miningdelay delay 2` (this would change the delay to 2 ticks).
 
-Required Idea plugins:
-- [Minecraft Development](https://plugins.jetbrains.com/plugin/8327-minecraft-development)
-- [Stonecutter Dev](https://plugins.jetbrains.com/plugin/25044-stonecutter-dev)
+By default, mining delay modification is disabled when connected to a server, as most servers with anti-cheat enabled will ban you for doing it. Using the command `/miningdelay enabledOnServers true` will enable the modified mining delay on servers, and `/miningdelay enabledOnServers false` will disable it again.
+
+Changes you make via commands are saved to `miningdelay.json` located in the config folder. Note that manually editing the file while in-game won't apply the changes in real-time like the commands do.

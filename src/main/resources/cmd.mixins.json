@@ -1,12 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "me.pajic.modid.mixin",
-  "compatibilityLevel": "JAVA_21",
-  "mixins": [
-  ],
+  "package": "me.pajic.cmd.mixin",
+  "compatibilityLevel": "JAVA_17",
   "client": [
-    "ExampleMixin"
+    "ClientPacketListenerMixin",
+    "MultiPlayerGameModeMixin"
   ],
   "injectors": {
     "defaultRequire": 1
