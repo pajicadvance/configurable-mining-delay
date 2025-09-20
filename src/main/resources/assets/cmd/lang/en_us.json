@@ -4,6 +4,5 @@
   "cmd.setEnabledOnServers": "Enabled mining delay modification on servers. This may get you banned on servers with anti-cheat enabled!",
   "cmd.setDisabledOnServers": "Disabled mining delay modification on servers",
   "cmd.getEnabledOnServers": "Mining delay modification is currently enabled on servers",
-  "cmd.getDisabledOnServers": "Mining delay modification is currently disabled on servers",
-  "cmd.warnOnLogin": "WARNING: Mining delay is modified while on a server! This may get you banned from servers with anti-cheat!"
+  "cmd.getDisabledOnServers": "Mining delay modification is currently disabled on servers"
 }
