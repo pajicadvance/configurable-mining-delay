@@ -4,6 +4,7 @@
   "package": "me.pajic.cmd.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "MinecraftMixin",
     "MultiPlayerGameModeMixin"
   ],
   "injectors": {

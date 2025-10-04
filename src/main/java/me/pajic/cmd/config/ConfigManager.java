@@ -35,7 +35,7 @@ public class ConfigManager {
     private static void readConfig() {
         try (FileReader reader = new FileReader(FILE_PATH.toFile())) {
             CONFIG = GSON.fromJson(reader, ModConfig.class);
-            CONFIG.validate();
+            CONFIG.validateAll();
         } catch (FileNotFoundException | JsonSyntaxException e) {
             LOGGER.warn("Config doesn't exist or is malformed, initializing new mod config...");
             initializeConfig();

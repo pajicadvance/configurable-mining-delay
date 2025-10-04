@@ -1,0 +1,1 @@
+- Added `/miningdelay placement_delay` command which changes the delay between placing blocks.

@@ -29,6 +29,19 @@ public class ClientMain implements ClientModInitializer {
                                 return Command.SINGLE_SUCCESS;
                             })
                     )
+                    .then(ClientCommandManager.literal("placement_delay")
+                            .then(ClientCommandManager.argument("value", IntegerArgumentType.integer(0, 20)).executes(context -> {
+                                int value = IntegerArgumentType.getInteger(context, "value");
+                                ConfigManager.CONFIG.setPlacementDelay(value);
+                                ConfigManager.saveConfig();
+                                context.getSource().sendFeedback(Component.translatable("cmd.setPlacementDelay", value));
+                                return Command.SINGLE_SUCCESS;
+                            }))
+                            .executes(context -> {
+                                context.getSource().sendFeedback(Component.translatable("cmd.getPlacementDelay", ConfigManager.CONFIG.getPlacementDelay()));
+                                return Command.SINGLE_SUCCESS;
+                            })
+                    )
             );
             dispatcher.register(ClientCommandManager.literal("miningdelay")
                     .then(ClientCommandManager.literal("enabledOnServers")

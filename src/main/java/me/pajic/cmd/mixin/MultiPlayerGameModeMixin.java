@@ -21,7 +21,7 @@ public class MultiPlayerGameModeMixin {
                     args = "intValue=5"
             )
     )
-    private int reduceDestroyDelay(int original) {
+    private int modifyDestroyDelay(int original) {
         return ConfigManager.CONFIG.isEnabledOnServers() || minecraft.hasSingleplayerServer() ?
                 ConfigManager.CONFIG.getMiningDelay() : original;
     }

@@ -1,6 +1,8 @@
 {
   "cmd.setMiningDelay": "Set mining delay to %s",
   "cmd.getMiningDelay": "Mining delay is currently set to %s",
+  "cmd.setPlacementDelay": "Set placement delay to %s",
+  "cmd.getPlacementDelay": "Placement delay is currently set to %s",
   "cmd.setEnabledOnServers": "Enabled mining delay modification on servers. This may get you banned on servers with anti-cheat enabled!",
   "cmd.setDisabledOnServers": "Disabled mining delay modification on servers",
   "cmd.getEnabledOnServers": "Mining delay modification is currently enabled on servers",
