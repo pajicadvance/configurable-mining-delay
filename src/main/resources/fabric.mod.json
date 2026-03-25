@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "cmd",
+  "version": "${version}",
+  "name": "Configurable Mining Delay",
+  "description": "Change the delay between mining blocks in real-time using commands",
+  "authors": ["pajic"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.pajic.cmd.ClientMain"
+    ]
+  },
+  "mixins": [
+    "cmd.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": ">=26.1"
+  }
+}
